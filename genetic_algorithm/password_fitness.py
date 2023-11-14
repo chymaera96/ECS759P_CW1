@@ -15,9 +15,6 @@ def get_password(student_username, l=10):
 
     return s[0:l]
 
-# TO DO: replace *** with your EECS username and uncomment the code
-# student_password = get_password('***')
-print(student_password)
 
 # Distance function
 def distance_function(string_one, string_two):
@@ -40,5 +37,3 @@ def get_normalised_fitness(list_of_phrases, student_password):
         ordered_dict[phrase] = 1 - distance_function(phrase, phrase_to_find) / MAX_VALUE
     return ordered_dict
 
-# Example of how to get fitness values for a list of candidates
-get_normalised_fitness(['2Q4HHHHOTJ', '2HHZQYUOTJ'], student_password)
